@@ -67,7 +67,7 @@ incorectGuess.textContent=0;
 display.append(incorectGuess);
 const displayAllGuess = document.createElement("p");
 displayAllGuess.setAttribute("class", "quiz__display__all-guess");
-displayAllGuess.textContent='/6'
+displayAllGuess.textContent="/6"
 display.append(displayAllGuess);
 quiz.append(display);
 
