@@ -5,6 +5,7 @@ let tempNumb;
 let prevTempNumb = getLocalStorage() || 0;
 export let rightAnswer="";
 
+
 export function getRandomWord() {
     tempNumb = Math.floor(Math.random() * (quizData.length - 1));
     setLocalStorage();
@@ -21,6 +22,7 @@ export function getRandomWord() {
   
   getRandomWord();
   
+
   // save random quiz in localStorage ----------------------------------------------------------------------------------------------------------
   function setLocalStorage() {
     localStorage.setItem("tempNumb", tempNumb);
@@ -32,5 +34,6 @@ export function getRandomWord() {
   
   }
   
+
   window.addEventListener("load", getLocalStorage);
   window.addEventListener("beforeunload", setLocalStorage);

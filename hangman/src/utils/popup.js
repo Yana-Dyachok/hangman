@@ -1,6 +1,7 @@
 
-import { rightAnswer, getRandomWord } from "./quiz.js";
+import { rightAnswer} from "./quiz.js";
 import { newGame } from "./keyboard.js";
+
 export function createPopUp(flag) {
   const popup = document.createElement("div");
   popup.classList.add("popup");

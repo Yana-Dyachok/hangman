@@ -5,6 +5,7 @@ const header = document.createElement("header");
 header.setAttribute("class", "header");
 wrapperBlock.append(header);
 
+
 // create main-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 const main = document.createElement("main");
 main.setAttribute("class", "main");
@@ -17,6 +18,7 @@ gallows.setAttribute("class", "gallows__inner");
 const gallowsTree = document.createElement("div");
 gallowsTree.setAttribute("class", "gallows__tree");
 gallows.append(gallowsTree);
+
 export const man = document.createElement("div");
 man.setAttribute("class", "gallows__man man");
 export const mansHead = document.createElement("div");
@@ -44,6 +46,7 @@ title.setAttribute("class", "gallows__title");
 title.textContent = "Hangman";
 gallowsPart.append(title);
 main.append(gallowsPart);
+
 
 // create quiz-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 const quiz = document.createElement("section");
@@ -77,6 +80,7 @@ quiz.append(keyboard);
 
 main.append(quiz);
 wrapperBlock.append(main);
+
 
 // create footer-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 const footer = document.createElement("footer");

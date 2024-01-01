@@ -2,6 +2,7 @@ import { keyboard, incorectGuess, man, mansHead, mansBody, mansLeftHand, mansRig
 import { rightAnswer, getRandomWord } from "./quiz.js"
 import { createPopUp } from "./popup.js";
 
+
 function getKeyboardBtn() {
   for (let i = 97; i <= 122; i++) {
     const button = document.createElement("button");
@@ -22,6 +23,7 @@ function getInactiveBtn(element) {
   checkLetter(element.innerText);
 }
 
+
 function getActiveBtn() {
   const btn = document.querySelectorAll(".keyboard__btn");
   btn.forEach(el => {
@@ -30,6 +32,7 @@ function getActiveBtn() {
     el.style.cursor = "pointer";
   });
 }
+
 
 function clickButtons() {
   document.querySelectorAll(".keyboard__btn").forEach(btn => {
@@ -40,6 +43,7 @@ function clickButtons() {
 }
 
 clickButtons();
+
 
 document.addEventListener("keydown", (event) => {
   let btn = document.querySelector(`[data="${event.code}"]`);
