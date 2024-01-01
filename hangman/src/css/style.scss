@@ -1,88 +1,101 @@
 @font-face {
-    font-family: 'candy psyche';
-    src: url('../assets/fonts/candypsycheregular.woff2') format('woff2'),
-        url('../assets/fonts/candypsycheregular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
+  font-family: "candy psyche";
+  src: url("../assets/fonts/candypsycheregular.woff2") format("woff2"),
+    url("../assets/fonts/candypsycheregular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: 'miyanih';
-    src: url('../assets/fonts/miyanih.woff2') format('woff2'),
-        url('../assets/fonts/miyanih.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: 'tenpounds regular';
-    src: url('../assets/fonts/tenpounds-regular.woff2') format('woff2'),
-        url('../assets/fonts/tenpounds-regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
+  font-family: "miyanih";
+  src: url("../assets/fonts/miyanih.woff2") format("woff2"),
+    url("../assets/fonts/miyanih.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
+
+
+@font-face {
+  font-family: "tenpounds regular";
+  src: url("../assets/fonts/tenpounds-regular.woff2") format("woff2"),
+    url("../assets/fonts/tenpounds-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 
 :root {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
+
 
 body {
-    margin: 0;
+  margin: 0;
 }
+
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
+
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
+
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
+
 
 button,
 input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    color: inherit;
-    font: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
 }
 
+
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
+
 
 h1,
 h2,
 h3 {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
+
 
 $c-white: #ecf1f7;
 $c-violet: #9161b7;
@@ -93,478 +106,535 @@ $c-burgundy-400: #66145b;
 $c-burgundy-800: #33051c;
 $c-black: black;
 
+
 body {
-    font-family: 'miyanih', serif;
-    font-size: 2.3rem;
-    text-align: center;
-    background-image: linear-gradient(to right, $c-white, $c-blue-100);
+  font-family: "miyanih", serif;
+  font-size: 2.3rem;
+  text-align: center;
+  background-image: linear-gradient(to right, $c-white, $c-blue-100);
 }
+
 
 .wrapper {
-    max-width: 90rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    margin: 0 auto;
-    overflow-x: hidden;
+  max-width: 90rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
+
 .main {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
+
 
 //gallows-----------------------------------------------------------------------
 
 .gallows {
-    &__part {
-        display: flex;
-        flex-direction: column;
-    }
+  &__part {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__inner {
-        display: flex;
-        position: relative;
-        padding-top: 3rem;
-    }
+  &__inner {
+    display: flex;
+    position: relative;
+    padding-top: 3rem;
+  }
 
-    &__tree {
-        width: 22rem;
-        height: 30rem;
-        background: url(../assets/img/gallows..svg) center no-repeat;
-        filter: drop-shadow(0.2rem 0.2rem 0.2rem $c-black);
-        border-bottom: 0.5rem solid $c-burgundy-100;
-    }
+  &__tree {
+    width: 22rem;
+    height: 30rem;
+    background: url(../assets/img/gallows..svg) center no-repeat;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem $c-black);
+    border-bottom: 0.5rem solid $c-burgundy-100;
+  }
 
-    &__title {
-        padding-top: 1rem;
-        font-family: 'tenpounds regular', serif;
-        font-size: 6rem;
-        color: $c-blue-100;
-        filter: drop-shadow(0.1rem 0.1rem 0.1rem $c-black);
-    }
+  &__title {
+    padding-top: 1rem;
+    font-family: "tenpounds regular", serif;
+    font-size: 6rem;
+    color: $c-blue-100;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem $c-black);
+  }
 }
 
 .man {
+  position: absolute;
+  top: 8.5rem;
+  left: 15.5rem;
+  background-color: transparent;
+
+  &__head {
+    width: 7rem;
+    height: 7rem;
+    background: url(../assets/img/head.svg) center no-repeat;
+    opacity: 0;
+  }
+
+  &__body {
+    width: 1rem;
+    height: 8rem;
     position: absolute;
-    top: 8.5rem;
-    left: 15.5rem;
-    background-color: transparent;
+    top: 6.5rem;
+    left: 3rem;
+    background: url(../assets/img/body.svg) center no-repeat;
+    opacity: 0;
+  }
 
-    &__head {
-        width: 7rem;
-        height: 7rem;
-        background: url(../assets/img/head.svg) center no-repeat;
-        opacity: 0;
-    }
+  &__left-hand {
+    width: 4rem;
+    height: 5rem;
+    position: absolute;
+    top: 8rem;
+    right: 3.5rem;
+    background: url(../assets/img/hand-one.svg) center no-repeat;
+    opacity: 0;
+  }
 
-    &__body {
-        width: 1rem;
-        height: 8rem;
-        position: absolute;
-        top: 6.5rem;
-        left: 3rem;
-        background: url(../assets/img/body.svg) center no-repeat;
-        opacity: 0;
-    }
+  &__right-hand {
+    width: 4rem;
+    height: 5rem;
+    position: absolute;
+    top: 8rem;
+    left: 3.5rem;
+    background: url(../assets/img/hand-two.svg) center no-repeat;
+    opacity: 0;
+  }
 
-    &__left-hand {
-        width: 4rem;
-        height: 5rem;
-        position: absolute;
-        top: 8rem;
-        right: 3.5rem;
-        background: url(../assets/img/hand-one.svg) center no-repeat;
-        opacity: 0;
-    }
+  &__left-leg {
+    width: 4rem;
+    height: 5rem;
+    position: absolute;
+    top: 14.2rem;
+    right: 3.4rem;
+    background: url(../assets/img/leg-one.svg) center no-repeat;
+    opacity: 0;
+  }
 
-    &__right-hand {
-        width: 4rem;
-        height: 5rem;
-        position: absolute;
-        top: 8rem;
-        left: 3.5rem;
-        background: url(../assets/img/hand-two.svg) center no-repeat;
-        opacity: 0;
-    }
-
-    &__left-leg {
-        width: 4rem;
-        height: 5rem;
-        position: absolute;
-        top: 14.2rem;
-        right: 3.4rem;
-        background: url(../assets/img/leg-one.svg) center no-repeat;
-        opacity: 0;
-    }
-
-    &__right-leg {
-        width: 4rem;
-        height: 5rem;
-        position: absolute;
-        top: 14.2rem;
-        left: 3.5rem;
-        background: url(../assets/img/leg-two.svg) center no-repeat;
-        opacity: 0;
-    }
+  &__right-leg {
+    width: 4rem;
+    height: 5rem;
+    position: absolute;
+    top: 14.2rem;
+    left: 3.5rem;
+    background: url(../assets/img/leg-two.svg) center no-repeat;
+    opacity: 0;
+  }
 }
+
 
 @keyframes allbodymove {
-    0% {
-        transform: translatey(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translatey(0);
+    opacity: 1;
+  }
 
-    100% {
-        transform: translatey(100%);
-        opacity: 0;
-    }
+  100% {
+    transform: translatey(100%);
+    opacity: 0;
+  }
 }
+
 
 @keyframes leftpartmove {
-    0% {
-        transform: translatex(-100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translatex(-100%);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translatex(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
 }
+
 
 @keyframes rightpartmove {
-    0% {
-        transform: translatex(100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translatex(100%);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translatex(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
 }
+
 
 @keyframes bodypartmove {
-    0% {
-        transform: translatey(100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translatey(100%);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translatey(0);
-        opacity: 1;
-    }
+
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
 }
+
 
 //quiz---------------------------------------------------------------------------------------------------------------------------------------------------------------
 .quiz {
-    &__part {
-        padding: 3rem 1rem;
-        display: flex;
-        flex-direction: column;
+  &__part {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__question {
+    padding: 1rem;
+    color: $c-burgundy-800;
+  }
+
+  &__display {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-bottom: 1rem;
+
+    &__title {
+      color: $c-blue-300;
+      padding-right: 1rem;
     }
 
-    &__question {
-        padding: 1rem;
-        color: $c-burgundy-800;
+    &__incorect-guess {
+      color: $c-burgundy-100;
     }
 
-    &__display {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        padding-bottom: 1rem;
-
-        &__title {
-            color: $c-blue-300;
-            padding-right: 1rem;
-        }
-
-        &__incorect-guess {
-            color: $c-burgundy-100;
-        }
-
-        &__all-guess {
-            color: $c-burgundy-100;
-        }
+    &__all-guess {
+      color: $c-burgundy-100;
     }
+  }
 
-    &__letter {
-        display: inline-block;
-        margin-right: 2rem;
-        font-family: 'candy psyche', serif;
-        color: $c-burgundy-400;
-        filter: drop-shadow(0.1rem 0.1rem 0.1rem $c-white);
-    }
+  &__letter {
+    display: inline-block;
+    margin-right: 2rem;
+    font-family: "candy psyche", serif;
+    color: $c-burgundy-400;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem $c-white);
+  }
 }
+
 
 //keyboard ----------------------------------------------------------------------------------------------------------------------
 .keyboard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    transition: all 0.5s ease 0s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
 
-    &__btn {
-        min-width: 4rem;
-        height: 4rem;
-        margin: 0.3rem;
-        font-size: 1.5rem;
-        color: $c-white;
-        background-color: $c-violet;
-        border: 0.2rem solid rgba(61, 14, 43, 0.9);
-        border-radius: 10%;
-        cursor: pointer;
-        box-shadow: inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
-            inset 0 0.5rem 1rem rgb(104, 32, 138, 0.9),
-            inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
+  &__btn {
+    min-width: 4rem;
+    height: 4rem;
+    margin: 0.3rem;
+    font-size: 1.5rem;
+    color: $c-white;
+    background-color: $c-violet;
+    border: 0.2rem solid rgba(61, 14, 43, 0.9);
+    border-radius: 10%;
+    cursor: pointer;
+    box-shadow: inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
+      inset 0 0.5rem 1rem rgb(104, 32, 138, 0.9),
+      inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
 
-        &:hover {
-            background-color: $c-blue-100;
-            border: 0.1rem solid rgba(249, 245, 245, 0.9);
-            box-shadow: inset 0 0.5rem 8rem rgb(61, 146, 224, 0.7),
-                inset 0 0.5rem 1rem rgba(7, 4, 22, 0.9),
-                inset 0 -0.5rem 1rem rgba(1, 0, 15, 0.8);
-        }
-
-        &--focused {
-            border: 0.1rem solid rgba(249, 245, 245, 0.9);
-            border-radius: 50%;
-            box-shadow: inset 0 0.5rem 8rem rgb(134, 15, 99, 0.7),
-                inset 0 0.5rem 1rem rgba(212, 64, 190, 0.9),
-                inset 0 -0.5rem 1rem rgba(170, 31, 109, 0.8);
-        }
+    &:hover {
+      background-color: $c-blue-100;
+      border: 0.1rem solid rgba(249, 245, 245, 0.9);
+      box-shadow: inset 0 0.5rem 8rem rgb(61, 146, 224, 0.7),
+        inset 0 0.5rem 1rem rgba(7, 4, 22, 0.9),
+        inset 0 -0.5rem 1rem rgba(1, 0, 15, 0.8);
     }
+
+    &--focused {
+      border: 0.1rem solid rgba(249, 245, 245, 0.9);
+      border-radius: 50%;
+      box-shadow: inset 0 0.5rem 8rem rgb(134, 15, 99, 0.7),
+        inset 0 0.5rem 1rem rgba(212, 64, 190, 0.9),
+        inset 0 -0.5rem 1rem rgba(170, 31, 109, 0.8);
+    }
+  }
 }
+
 
 //popup----------------------------------------------------------------------------------------------
 .popup {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(37, 34, 34, 0.7);
-    opacity: 1;
-    visibility: visible;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 34, 34, 0.7);
+  opacity: 1;
+  visibility: visible;
 
-    &__body {
-        min-height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 1rem;
-    }
+  &__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        position: relative;
-        font-size: 1.8rem;
-        text-align: center;
-        color: $c-white;
-        background-color: $c-blue-100;
-        border-radius: 1rem;
-    }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    font-size: 1.8rem;
+    text-align: center;
+    color: $c-white;
+    background-color: $c-blue-100;
+    border-radius: 1rem;
+  }
 
-    &__text {
-        padding: 2rem 1rem 0rem;
-        font-size: 2rem;
-    }
+  &__text {
+    padding: 2rem 1rem 0rem;
+    font-size: 2rem;
+  }
 
-    &__span-word {
-        font-family: 'candy psyche', serif;
-        color: $c-burgundy-400;
-    }
+  &__span-word {
+    font-family: "candy psyche", serif;
+    color: $c-burgundy-400;
+  }
 
-    &__close-btn {
-        padding: 1rem 2rem;
-        color: $c-white;
-        background-color: $c-violet;
-        border-radius: 1rem;
-        cursor: pointer;
-        box-shadow: inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
-            inset 0 0.5rem 1rem rgb(104, 32, 138, 0.9),
-            inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
-        &:hover {
-            transform: scale(1.1);
-            box-shadow: inset 0 0.5rem 8rem rgba(194, 22, 157, 0.7),
-                inset 0 0.5rem 1rem rgba(78, 14, 107, 0.9),
-                inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
-        }
+  &__close-btn {
+    padding: 1rem 2rem;
+    color: $c-white;
+    background-color: $c-violet;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
+      inset 0 0.5rem 1rem rgb(104, 32, 138, 0.9),
+      inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: inset 0 0.5rem 8rem rgba(194, 22, 157, 0.7),
+        inset 0 0.5rem 1rem rgba(78, 14, 107, 0.9),
+        inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
     }
+  }
 }
+
 
 .target {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
+
 
 @media screen and (max-width: 1150px) {
-    .gallows {
-        &__tree {
-            width: 18rem;
-            height: 25rem;
-            background-size: 18rem;
-        }
-
-        &__title {
-            font-size: 5rem;
-        }
+  .gallows {
+    &__tree {
+      width: 18rem;
+      height: 25rem;
+      background-size: 18rem;
     }
 
-    .man {
-        top: 7.6rem;
-        left: 12rem;
+    &__title {
+      font-size: 5rem;
+    }
+  }
 
-        &__body {
-            height: 7rem;
-        }
 
-        &__left-leg {
-            top: 13rem;
-        }
+  .man {
+    top: 7.6rem;
+    left: 12rem;
 
-        &__right-leg {
-            top: 13rem;
-        }
+    &__body {
+      height: 7rem;
     }
 
-    .quiz {
-        &__part {
-            padding: 2rem 1rem;
-        }
-
-        &__question {
-            font-size: 2.4rem;
-        }
-
-        &__letter {
-            margin-right: 1rem;
-        }
+    &__left-leg {
+      top: 13rem;
     }
+
+    &__right-leg {
+      top: 13rem;
+    }
+  }
+
+  .quiz {
+    &__part {
+      padding: 2rem 1rem;
+    }
+
+    &__question {
+      font-size: 2.4rem;
+    }
+
+    &__letter {
+      margin-right: 1rem;
+    }
+  }
 }
+
 
 @media screen and (max-width: 920px) {
-    .body {
-        font-size: 1.5rem;
+  .body {
+    font-size: 1.5rem;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .man {
+    top: 5.3rem;
+    left: 12.4rem;
+
+    &__head {
+      width: 5rem;
+      height: 5rem;
+      background-size: 5rem;
     }
 
-    .main {
-        flex-direction: column;
-    }
-    .man {
-        top: 5.3rem;
-        left: 12.4rem;
-
-        &__head {
-            width: 5rem;
-            height: 5rem;
-            background-size: 5rem;
-        }
-
-        &__body {
-            height: 5.5rem;
-            top: 4.8rem;
-            left: 2rem;
-        }
-
-        &__left-hand {
-            height: 3rem;
-            top: 6rem;
-            right: 1.8rem;
-        }
-
-        &__right-hand {
-            height: 3rem;
-            top: 6rem;
-            left: 1.8rem;
-        }
-
-        &__left-leg {
-            top: 10rem;
-            height: 3rem;
-            right: 1.7rem;
-        }
-
-        &__right-leg {
-            top: 10rem;
-            height: 3rem;
-            left: 1.8rem;
-        }
+    &__body {
+      height: 5.5rem;
+      top: 4.8rem;
+      left: 2rem;
     }
 
-    .gallows {
-        &__part {
-            flex-direction: row;
-            gap: 4rem;
-        }
-
-        &__inner {
-            padding-top: 1rem;
-        }
-
-        &__tree {
-            width: 18rem;
-            height: 22rem;
-            background-size: 16rem;
-        }
-    }
-    .quiz {
-        &__part {
-            padding: 1rem 0.5rem;
-        }
+    &__left-hand {
+      height: 3rem;
+      top: 6rem;
+      right: 1.8rem;
     }
 
-    .keyboard {
-        &__btn {
-            min-width: 3rem;
-            height: 3rem;
-            margin: 0.2rem;
-        }
+    &__right-hand {
+      height: 3rem;
+      top: 6rem;
+      left: 1.8rem;
     }
+
+    &__left-leg {
+      top: 10rem;
+      height: 3rem;
+      right: 1.7rem;
+    }
+
+    &__right-leg {
+      top: 10rem;
+      height: 3rem;
+      left: 1.8rem;
+    }
+  }
+
+
+  .gallows {
+    &__part {
+      flex-direction: row;
+      gap: 4rem;
+    }
+
+    &__inner {
+      padding-top: 1rem;
+    }
+
+    &__tree {
+      width: 18rem;
+      height: 22rem;
+      background-size: 16rem;
+    }
+
+    &__title {
+      padding-top: 8rem;
+    }
+  }
+
+
+  .quiz {
+    &__part {
+      padding: 1rem 0.5rem;
+    }
+  }
+
+
+  .keyboard {
+    &__btn {
+      min-width: 3rem;
+      height: 3rem;
+      margin: 0.2rem;
+    }
+  }
 }
 
+
 @media screen and (max-width: 700px) {
-    .body {
-        font-size: 1rem;
-        height: 100vh;
+  .body {
+    font-size: 1rem;
+  }
+
+  .gallows {
+    &__part {
+      height: 38vh;
+      flex-direction: column;
     }
 
-    .gallows {
-        &__part {
-            width: 100%;
-            flex-direction: column-reverse;
-        }
-
-        &__inner {
-            padding-top: 0rem;
-            left: 25vw;
-            bottom: 4rem;
-        }
-
-        &__title {
-            padding: 0rem;
-            font-size: 3.5rem;
-        }
+    &__inner {
+      padding-top: 0rem;
+      left: 10%;
     }
 
-    .quiz {
-        &__part {
-            padding: 0rem 0.5rem 1rem;
-        }
+    &__tree {
+      width: 16rem;
+      height: 20rem;
+      background-size: 14rem;
     }
 
-    .keyboard {
-        &__btn {
-            min-width: 3rem;
-            height: 3rem;
-            margin: 0.2rem;
-        }
+    &__title {
+      position: relative;
+      padding: 0rem 3rem;
+      bottom: 142%;
+      font-size: 3.5rem;
     }
+  }
+
+
+  .man {
+    top: 4.1rem;
+    left: 10.5rem;
+  }
+
+
+  .quiz {
+    &__part {
+      padding: 1rem 0.5rem;
+      height: 50vh;
+    }
+
+    &__question {
+      padding: 0.5rem 0rem;
+      font-size: 1.8rem;
+    }
+
+    &__display {
+      font-size: 1.6rem;
+    }
+
+    &__letter {
+      font-size: 1.6rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  
+  .keyboard {
+    &__btn {
+      min-width: 2.2rem;
+      height: 2.2rem;
+      margin: 0.2rem;
+      font-size: 1.2rem;
+    }
+  }
 }
