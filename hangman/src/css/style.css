@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "candy psyche";
+  src: url("../assets/fonts/candypsycheregular.woff2") format("woff2"), url("../assets/fonts/candypsycheregular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "miyanih";
+  src: url("../assets/fonts/miyanih.woff2") format("woff2"), url("../assets/fonts/miyanih.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tenpounds regular";
+  src: url("../assets/fonts/tenpounds-regular.woff2") format("woff2"), url("../assets/fonts/tenpounds-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 :root {
   box-sizing: border-box;
 }
@@ -87,16 +108,17 @@ body {
 .gallows__inner {
   display: flex;
   position: relative;
+  padding-top: 3rem;
 }
 .gallows__tree {
   width: 22rem;
-  height: 28rem;
+  height: 30rem;
   background: url(../assets/img/gallows..svg) center no-repeat;
   filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
   border-bottom: 0.5rem solid #860f63;
 }
 .gallows__title {
-  padding-top: 2rem;
+  padding-top: 1rem;
   font-family: "tenpounds regular", serif;
   font-size: 6rem;
   color: #3d92e0;
@@ -202,7 +224,7 @@ body {
   }
 }
 .quiz__part {
-  padding: 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -308,19 +330,134 @@ body {
   cursor: pointer;
   box-shadow: inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7), inset 0 0.5rem 1rem rgba(104, 32, 138, 0.9), inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
 }
+.popup__close-btn:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 0.5rem 8rem rgba(194, 22, 157, 0.7), inset 0 0.5rem 1rem rgba(78, 14, 107, 0.9), inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
+}
 
 .target {
   opacity: 0;
   visibility: hidden;
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1150px) {
+  .gallows__tree {
+    width: 18rem;
+    height: 25rem;
+    background-size: 18rem;
+  }
+  .gallows__title {
+    font-size: 5rem;
+  }
+  .man {
+    top: 7.6rem;
+    left: 12rem;
+  }
+  .man__body {
+    height: 7rem;
+  }
+  .man__left-leg {
+    top: 13rem;
+  }
+  .man__right-leg {
+    top: 13rem;
+  }
+  .quiz__part {
+    padding: 2rem 1rem;
+  }
+  .quiz__question {
+    font-size: 2.4rem;
+  }
+  .quiz__letter {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .body {
+    font-size: 1.5rem;
+  }
   .main {
     flex-direction: column;
   }
+  .man {
+    top: 5.3rem;
+    left: 12.4rem;
+  }
+  .man__head {
+    width: 5rem;
+    height: 5rem;
+    background-size: 5rem;
+  }
+  .man__body {
+    height: 5.5rem;
+    top: 4.8rem;
+    left: 2rem;
+  }
+  .man__left-hand {
+    height: 3rem;
+    top: 6rem;
+    right: 1.8rem;
+  }
+  .man__right-hand {
+    height: 3rem;
+    top: 6rem;
+    left: 1.8rem;
+  }
+  .man__left-leg {
+    top: 10rem;
+    height: 3rem;
+    right: 1.7rem;
+  }
+  .man__right-leg {
+    top: 10rem;
+    height: 3rem;
+    left: 1.8rem;
+  }
+  .gallows__part {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .gallows__inner {
+    padding-top: 1rem;
+  }
+  .gallows__tree {
+    width: 18rem;
+    height: 22rem;
+    background-size: 16rem;
+  }
+  .quiz__part {
+    padding: 1rem 0.5rem;
+  }
+  .keyboard__btn {
+    min-width: 3rem;
+    height: 3rem;
+    margin: 0.2rem;
+  }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
   .body {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    height: 100vh;
+  }
+  .gallows__part {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .gallows__inner {
+    padding-top: 0rem;
+    left: 25vw;
+    bottom: 4rem;
+  }
+  .gallows__title {
+    padding: 0rem;
+    font-size: 3.5rem;
+  }
+  .quiz__part {
+    padding: 0rem 0.5rem 1rem;
+  }
+  .keyboard__btn {
+    min-width: 3rem;
+    height: 3rem;
+    margin: 0.2rem;
   }
 }/*# sourceMappingURL=style.css.map */
