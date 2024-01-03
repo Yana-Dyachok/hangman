@@ -86,12 +86,12 @@ body {
 }
 
 .wrapper {
-  max-width: 90rem;
+  max-width: 92rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -100,6 +100,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  padding: 2rem 0rem 1rem;
 }
 
 .gallows__part {
@@ -458,8 +459,8 @@ body {
   .gallows__title {
     position: relative;
     padding: 0rem 3rem;
-    bottom: 142%;
-    font-size: 3.5rem;
+    bottom: 140%;
+    font-size: 3.2rem;
   }
   .man {
     top: 4.1rem;
@@ -467,7 +468,7 @@ body {
   }
   .quiz__part {
     padding: 1rem 0.5rem;
-    height: 50vh;
+    height: 52vh;
   }
   .quiz__question {
     padding: 0.5rem 0rem;

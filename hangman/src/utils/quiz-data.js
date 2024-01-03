@@ -95,8 +95,8 @@ export const quizData = [
   },
   {
     question:
-      "What is a large natural stream of water flowing in a channel to the sea, a lake, or another such stream?",
-    answer: "river",
+      "An expedition or journey, typically to observe wildlife in their natural habitat.",
+    answer: "safari",
   },
   {
     question:
@@ -178,4 +178,9 @@ export const quizData = [
       "An expedition or journey, typically to observe wildlife in their natural habitat.",
     answer: "safari",
   },
+  {
+    question:
+      "What is a large natural stream of water flowing in a channel to the sea, a lake, or another such stream?",
+    answer: "river",
+  }
 ];
