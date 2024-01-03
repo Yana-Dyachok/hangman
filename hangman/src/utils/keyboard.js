@@ -24,12 +24,14 @@ function getKeyboardBtn() {
 
 getKeyboardBtn();
 
+
 function getInactiveBtn(element) {
     element.classList.add("keyboard__btn--focused");
     element.disabled = true;
     element.style.cursor = "not-allowed";
     checkLetter(element.innerText);
 }
+
 
 function getActiveBtn() {
     const btn = document.querySelectorAll(".keyboard__btn");
@@ -40,6 +42,7 @@ function getActiveBtn() {
     });
 }
 
+
 function getInactiveAllBtn() {
     const btn = document.querySelectorAll(".keyboard__btn");
     btn.forEach((el) => {
@@ -48,6 +51,7 @@ function getInactiveAllBtn() {
         el.style.cursor = "not-allowed";
     });
 }
+
 
 function clickButtons() {
     document.querySelectorAll(".keyboard__btn").forEach((btn) => {
@@ -60,6 +64,7 @@ function clickButtons() {
 
 clickButtons();
 
+
 document.addEventListener("keydown", (event) => {
     if (incorectGuess.innerText == 6) getInactiveAllBtn();
     let btn = document.querySelector(`[data="${event.code}"]`);
@@ -69,6 +74,7 @@ document.addEventListener("keydown", (event) => {
         getInactiveBtn(btn);
     }
 });
+
 
 function checkLetter(letter) {
     const letters = document.querySelectorAll(".quiz__letter");
@@ -96,6 +102,7 @@ function checkLetter(letter) {
         }
     }
 }
+
 
 function addPartOfBoddy() {
     switch (incorectGuess.innerText) {
@@ -127,6 +134,7 @@ function addPartOfBoddy() {
     }
 }
 
+
 function addOpacity(length, numb) {
     const array = [
         mansHead,
@@ -141,6 +149,7 @@ function addOpacity(length, numb) {
     }
 }
 
+
 function makeManDisappear() {
     man.style.animation = "allBodyMove 2s ease-out";
     setTimeout(() => {
@@ -148,6 +157,7 @@ function makeManDisappear() {
         addOpacity(6, "0");
     }, 1000);
 }
+
 
 export function newGame() {
     makeManDisappear();

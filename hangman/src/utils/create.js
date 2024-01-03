@@ -5,7 +5,6 @@ const header = document.createElement("header");
 header.setAttribute("class", "header");
 wrapperBlock.append(header);
 
-
 // create main-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 const main = document.createElement("main");
 main.setAttribute("class", "main");
@@ -47,30 +46,29 @@ title.textContent = "Hangman";
 gallowsPart.append(title);
 main.append(gallowsPart);
 
-
 // create quiz-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 const quiz = document.createElement("section");
 quiz.setAttribute("class", "quiz__part");
 export const secretWord = document.createElement("div");
-secretWord .setAttribute("class", "quiz__secret-word");
+secretWord.setAttribute("class", "quiz__secret-word");
 quiz.append(secretWord);
 export const quizQuestion = document.createElement("h2");
-quizQuestion .setAttribute("class", "quiz__question");
+quizQuestion.setAttribute("class", "quiz__question");
 quiz.append(quizQuestion);
 
 const display = document.createElement("div");
-display .setAttribute("class", "quiz__display");
+display.setAttribute("class", "quiz__display");
 const displayTitle = document.createElement("h3");
 displayTitle.setAttribute("class", "quiz__display__title");
-displayTitle.textContent="Incorrect quesses:"
+displayTitle.textContent = "Incorrect quesses:";
 display.append(displayTitle);
 export const incorectGuess = document.createElement("p");
 incorectGuess.setAttribute("class", "quiz__display__incorect-guess");
-incorectGuess.textContent=0;
+incorectGuess.textContent = 0;
 display.append(incorectGuess);
 const displayAllGuess = document.createElement("p");
 displayAllGuess.setAttribute("class", "quiz__display__all-guess");
-displayAllGuess.textContent="/6"
+displayAllGuess.textContent = "/6";
 display.append(displayAllGuess);
 quiz.append(display);
 
@@ -80,7 +78,6 @@ quiz.append(keyboard);
 
 main.append(quiz);
 wrapperBlock.append(main);
-
 
 // create footer-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 const footer = document.createElement("footer");
