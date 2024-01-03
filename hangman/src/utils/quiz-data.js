@@ -5,23 +5,20 @@ export const quizData = [
     answer: "sunflower",
   },
   {
-    question:
-      "Describe a dense forest characterized by high rainfall and biodiversity.",
-    answer: "rainforest",
+    question: "What is the largest ocean on Earth?",
+    answer: "pacific",
   },
   {
-    question:
-      "What is the name of a building or outdoor area where plays, movies, or other performances are staged?",
-    answer: "theater",
+    question: "What is the capital of Canada?",
+    answer: "ottawa",
   },
   {
     question: "What is a device used to transmit sound over long distances?",
     answer: "telephone",
   },
   {
-    question:
-      "Define the term: A system of communication consisting of words, gestures, and syntax.",
-    answer: "language",
+    question: "What is the largest planet in our solar system?",
+    answer: "jupiter",
   },
   {
     question: "What is a barren or arid land with little or no precipitation?",
@@ -36,29 +33,13 @@ export const quizData = [
     answer: "breeze",
   },
   {
-    question:
-      "What is the study of celestial objects and phenomena beyond Earth's atmosphere?",
-    answer: "astronomy",
-  },
-  {
-    question:
-      "In music, what is a lengthy musical composition for a full orchestra, typically in multiple movements?",
-    answer: "symphony",
-  },
-  {
-    question:
-      "What is a long work of fiction, typically with a complex plot and characters?",
-    answer: "novel",
+    question: "Which gas is responsible for the greenhouse effect?",
+    answer: "carbon",
   },
   {
     question:
       "What is the art and science of designing and constructing buildings?",
     answer: "architecture",
-  },
-  {
-    question:
-      "In classical dance, what form is characterized by precise and graceful movements?",
-    answer: "ballet",
   },
   {
     question: "Who is a person trained to travel and work in space?",
@@ -74,43 +55,20 @@ export const quizData = [
     answer: "technology",
   },
   {
-    question:
-      "What is a meteorological phenomenon caused by reflection, refraction, and dispersion of light?",
-    answer: "rainbow",
-  },
-  {
-    question:
-      "What encompasses all existing matter, space, and time as a whole?",
+    question:"What encompasses all existing matter, space, and time as a whole?",
     answer: "universe",
   },
   {
-    question:
-      "The art, process, or practice of creating images by recording light or other electromagnetic radiation.",
-    answer: "photography",
+    question: "What is the capital of Brazil?",
+    answer: "brasilia",
   },
   {
-    question:
-      "What is a celestial body that orbits a star and does not produce light of its own?",
-    answer: "planet",
-  },
-  {
-    question:
-      "An expedition or journey, typically to observe wildlife in their natural habitat.",
-    answer: "safari",
-  },
-  {
-    question:
-      "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn.",
-    answer: "tropical",
+    question: "Who wrote 'The Odyssey'?",
+    answer: "homer",
   },
   {
     question: "Difficult or impossible to understand, explain, or identify.",
     answer: "mysterious",
-  },
-  {
-    question:
-      "What is the genre of imaginative fiction involving magic and supernatural elements?",
-    answer: "fantasy",
   },
   {
     question:
@@ -144,13 +102,16 @@ export const quizData = [
     answer: "unpredictable",
   },
   {
-    question:
-      "To confuse or bewilder someone; to make something unclear or difficult to understand.",
-    answer: "obfuscate",
+    question: "Which continent is known as the 'Land of the Rising Sun'?",
+    answer: "asia",
   },
   {
-    question: "To make known or reveal something previously secret or unknown.",
-    answer: "unveil",
+    question: "In which film did DiCaprio play the character Jack Dawson?",
+    answer: "titanic",
+  },
+  {
+    question: "What is the term for a perfect score in a game of bowling?",
+    answer: "strike",
   },
   {
     question:
@@ -174,9 +135,24 @@ export const quizData = [
     answer: "brilliant",
   },
   {
-    question:
-      "An expedition or journey, typically to observe wildlife in their natural habitat.",
-    answer: "safari",
+    question: "What is the capital of France?",
+    answer: "paris",
+  },
+  {
+    question: "Which element has the chemical symbol 'O'?",
+    answer: "oxygen",
+  },
+  {
+    question: "Which planet is known as the 'Red Planet'?",
+    answer: "mars",
+  },
+  {
+    question: "Who painted the Mona Lisa?",
+    answer: "davinci",
+  },
+  {
+    question: "What is the square root of 64?",
+    answer: "eight",
   },
   {
     question:
