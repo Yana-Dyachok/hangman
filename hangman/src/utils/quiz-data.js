@@ -37,11 +37,6 @@ export const quizData = [
     answer: "carbon",
   },
   {
-    question:
-      "What is the art and science of designing and constructing buildings?",
-    answer: "architecture",
-  },
-  {
     question: "Who is a person trained to travel and work in space?",
     answer: "astronaut",
   },
@@ -96,10 +91,6 @@ export const quizData = [
   {
     question: "What is a strong desire to know or learn something?",
     answer: "curiosity",
-  },
-  {
-    question: "Not able to be foreseen or known beforehand; uncertain.",
-    answer: "unpredictable",
   },
   {
     question: "Which continent is known as the 'Land of the Rising Sun'?",
