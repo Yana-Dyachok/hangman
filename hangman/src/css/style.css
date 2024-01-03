@@ -79,6 +79,7 @@ h3 {
 }
 
 body {
+  height: 100vh;
   font-family: "miyanih", serif;
   font-size: 2.3rem;
   text-align: center;
@@ -87,11 +88,10 @@ body {
 
 .wrapper {
   max-width: 92rem;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 1rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -100,7 +100,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 2rem 0rem 1rem;
 }
 
 .gallows__part {
@@ -444,8 +443,9 @@ body {
     font-size: 1rem;
   }
   .gallows__part {
-    height: 36vh;
     flex-direction: column;
+    max-height: 24rem;
+    gap: 0;
   }
   .gallows__inner {
     padding-top: 0rem;
@@ -457,9 +457,7 @@ body {
     background-size: 14rem;
   }
   .gallows__title {
-    position: relative;
     padding: 0rem 3rem;
-    bottom: 147%;
     font-size: 3.2rem;
   }
   .man {
@@ -468,7 +466,6 @@ body {
   }
   .quiz__part {
     padding: 1rem 0.5rem;
-    height: 50vh;
   }
   .quiz__question {
     padding: 0.5rem 0rem;
