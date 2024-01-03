@@ -444,7 +444,7 @@ body {
     font-size: 1rem;
   }
   .gallows__part {
-    height: 38vh;
+    height: 36vh;
     flex-direction: column;
   }
   .gallows__inner {
@@ -459,7 +459,7 @@ body {
   .gallows__title {
     position: relative;
     padding: 0rem 3rem;
-    bottom: 140%;
+    bottom: 147%;
     font-size: 3.2rem;
   }
   .man {
@@ -468,7 +468,7 @@ body {
   }
   .quiz__part {
     padding: 1rem 0.5rem;
-    height: 52vh;
+    height: 50vh;
   }
   .quiz__question {
     padding: 0.5rem 0rem;

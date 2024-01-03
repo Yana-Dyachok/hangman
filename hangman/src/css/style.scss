@@ -553,7 +553,7 @@ body {
 
   .gallows {
     &__part {
-      height: 38vh;
+      height: 36vh;
       flex-direction: column;
     }
 
@@ -571,7 +571,7 @@ body {
     &__title {
       position: relative;
       padding: 0rem 3rem;
-      bottom: 140%;
+      bottom: 147%;
       font-size: 3.2rem;
     }
   }
@@ -584,7 +584,7 @@ body {
   .quiz {
     &__part {
       padding: 1rem 0.5rem;
-      height: 52vh;
+      height: 50vh;
     }
 
     &__question {
