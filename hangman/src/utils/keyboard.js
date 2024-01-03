@@ -12,6 +12,8 @@ import {
 import { rightAnswer, getRandomWord } from "./quiz.js";
 import { createPopUp } from "./popup.js";
 
+let pressedKeys = {};
+
 function getKeyboardBtn() {
   for (let i = 97; i <= 122; i++) {
     const button = document.createElement("button");
@@ -33,6 +35,7 @@ function getInactiveBtn(element) {
 
 function getActiveBtn() {
   const btn = document.querySelectorAll(".keyboard__btn");
+  pressedKeys = {};
   btn.forEach((el) => {
     el.classList.remove("keyboard__btn--focused");
     el.disabled = false;
@@ -43,7 +46,6 @@ function getActiveBtn() {
 function getInactiveAllBtn() {
   const btn = document.querySelectorAll(".keyboard__btn");
   btn.forEach((el) => {
-    el.classList.add("keyboard__btn--focused");
     el.disabled = true;
     el.style.cursor = "not-allowed";
   });
@@ -52,7 +54,6 @@ function getInactiveAllBtn() {
 function clickButtons() {
   document.querySelectorAll(".keyboard__btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      if (incorectGuess.innerText == 6)getInactiveAllBtn();
       getInactiveBtn(btn);
     });
   });
@@ -61,24 +62,32 @@ function clickButtons() {
 clickButtons();
 
 document.addEventListener("keydown", (event) => {
-  if (incorectGuess.innerText == 6)getInactiveAllBtn();
   let btn = document.querySelector(`[data="${event.code}"]`);
-
-  if (btn) {
+  
+  if (btn && !pressedKeys[event.code]&& !btn.disabled) {
     event.preventDefault();
     getInactiveBtn(btn);
+    pressedKeys[event.code] = true;
   }
 });
+
+
+
+// document.addEventListener("keydown", (event) => {
+//   let btn = document.querySelector(`[data="${event.code}"]`);
+//   if (btn) {
+//     event.preventDefault();
+//     getInactiveBtn(btn);
+//   }
+// });
 
 function checkLetter(letter) {
   const letters = document.querySelectorAll(".quiz__letter");
   const letterArray = Array.from(letters);
 
   if (!rightAnswer.includes(letter)) {
-    if (incorectGuess.innerText < 6) {
       incorectGuess.innerText = +incorectGuess.innerText + 1;
       addPartOfBoddy();
-    }
   } else {
     const indices = [...rightAnswer].reduce((acc, char, index) => {
       if (char === letter) acc.push(index);
