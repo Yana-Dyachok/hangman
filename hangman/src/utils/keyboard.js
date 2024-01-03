@@ -52,7 +52,7 @@ function getInactiveAllBtn() {
 function clickButtons() {
   document.querySelectorAll(".keyboard__btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      if (incorectGuess.innerText == 6) getInactiveAllBtn();
+      if (incorectGuess.innerText == 6)getInactiveAllBtn();
       getInactiveBtn(btn);
     });
   });
@@ -61,7 +61,7 @@ function clickButtons() {
 clickButtons();
 
 document.addEventListener("keydown", (event) => {
-  if (incorectGuess.innerText == 6) getInactiveAllBtn();
+  if (incorectGuess.innerText == 6)getInactiveAllBtn();
   let btn = document.querySelector(`[data="${event.code}"]`);
 
   if (btn) {
@@ -92,6 +92,7 @@ function checkLetter(letter) {
     });
 
     if (!letterArray.some((letter) => letter.innerText.includes("_"))) {
+      getInactiveAllBtn();
       setTimeout(() => createPopUp(true), 1000);
     }
   }
@@ -122,6 +123,7 @@ function addPartOfBoddy() {
     case "6":
       mansRightLeg.style.animation = "rightPartMove 1s ease-out";
       addOpacity(6, "1");
+      getInactiveAllBtn();
       setTimeout(() => createPopUp(false), 1000);
       break;
   }
