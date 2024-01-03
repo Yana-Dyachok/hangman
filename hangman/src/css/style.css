@@ -93,7 +93,7 @@ body {
   justify-content: center;
   padding: 2rem 1rem;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .main {
