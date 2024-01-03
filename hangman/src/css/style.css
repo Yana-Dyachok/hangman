@@ -184,43 +184,43 @@ body {
   opacity: 0;
 }
 
-@keyframes allbodymove {
+@keyframes allBodyMove {
   0% {
-    transform: translatey(0);
+    transform: translateY(0);
     opacity: 1;
   }
   100% {
-    transform: translatey(100%);
+    transform: translateY(100%);
     opacity: 0;
   }
 }
-@keyframes leftpartmove {
+@keyframes leftPartMove {
   0% {
-    transform: translatex(-100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
-    transform: translatex(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes rightpartmove {
+@keyframes rightPartMove {
   0% {
-    transform: translatex(100%);
+    transform: translateX(100%);
     opacity: 0;
   }
   100% {
-    transform: translatex(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes bodypartmove {
+@keyframes bodyPartMove {
   0% {
-    transform: translatey(100%);
+    transform: translateY(100%);
     opacity: 0;
   }
   100% {
-    transform: translatey(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
