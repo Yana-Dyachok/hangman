@@ -26,7 +26,7 @@ export function createPopUp(flag) {
 
   const closeButton = document.createElement("button");
   closeButton.classList.add("popup__close-btn");
-  closeButton.textContent = "New Game";
+  closeButton.textContent = "Play Again";
 
   closeButton.addEventListener("click", () => {
     popup.classList.toggle("target");
