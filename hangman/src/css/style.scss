@@ -1,37 +1,36 @@
 @font-face {
   font-family: "candy psyche";
-  src: url("../assets/fonts/candypsycheregular.woff2") format("woff2"),
+  src:
+    url("../assets/fonts/candypsycheregular.woff2") format("woff2"),
     url("../assets/fonts/candypsycheregular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "miyanih";
-  src: url("../assets/fonts/miyanih.woff2") format("woff2"),
+  src:
+    url("../assets/fonts/miyanih.woff2") format("woff2"),
     url("../assets/fonts/miyanih.woff") format("woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "tenpounds regular";
-  src: url("../assets/fonts/tenpounds-regular.woff2") format("woff2"),
+  src:
+    url("../assets/fonts/tenpounds-regular.woff2") format("woff2"),
     url("../assets/fonts/tenpounds-regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
-
 :root {
   box-sizing: border-box;
 }
-
 
 *,
 *::before,
@@ -39,33 +38,27 @@
   box-sizing: inherit;
 }
 
-
 body {
   margin: 0;
 }
 
-
 ul li {
   list-style-type: none;
 }
-
 
 ul {
   margin: 0;
   padding: 0;
 }
 
-
 p {
   margin: 0;
 }
-
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
 
 button,
 input {
@@ -81,12 +74,10 @@ input {
   font: inherit;
 }
 
-
 img {
   display: block;
   max-width: 100%;
 }
-
 
 h1,
 h2,
@@ -95,7 +86,6 @@ h3 {
   padding: 0;
   font-weight: 400;
 }
-
 
 $c-white: #ecf1f7;
 $c-violet: #9161b7;
@@ -106,14 +96,12 @@ $c-burgundy-400: #66145b;
 $c-burgundy-800: #33051c;
 $c-black: black;
 
-
 body {
   font-family: "miyanih", serif;
   font-size: 2.3rem;
   text-align: center;
   background-image: linear-gradient(to right, $c-white, $c-blue-100);
 }
-
 
 .wrapper {
   max-width: 90rem;
@@ -126,13 +114,11 @@ body {
   overflow-x: hidden;
 }
 
-
 .main {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
-
 
 //gallows-----------------------------------------------------------------------
 
@@ -229,7 +215,6 @@ body {
   }
 }
 
-
 @keyframes allbodymove {
   0% {
     transform: translatey(0);
@@ -241,7 +226,6 @@ body {
     opacity: 0;
   }
 }
-
 
 @keyframes leftpartmove {
   0% {
@@ -255,7 +239,6 @@ body {
   }
 }
 
-
 @keyframes rightpartmove {
   0% {
     transform: translatex(100%);
@@ -268,20 +251,17 @@ body {
   }
 }
 
-
 @keyframes bodypartmove {
   0% {
     transform: translatey(100%);
     opacity: 0;
   }
 
-
   100% {
     transform: translatey(0);
     opacity: 1;
   }
 }
-
 
 //quiz---------------------------------------------------------------------------------------------------------------------------------------------------------------
 .quiz {
@@ -325,7 +305,6 @@ body {
   }
 }
 
-
 //keyboard ----------------------------------------------------------------------------------------------------------------------
 .keyboard {
   display: flex;
@@ -343,14 +322,16 @@ body {
     border: 0.2rem solid rgba(61, 14, 43, 0.9);
     border-radius: 10%;
     cursor: pointer;
-    box-shadow: inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
+    box-shadow:
+      inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
       inset 0 0.5rem 1rem rgb(104, 32, 138, 0.9),
       inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
 
     &:hover {
       background-color: $c-blue-100;
       border: 0.1rem solid rgba(249, 245, 245, 0.9);
-      box-shadow: inset 0 0.5rem 8rem rgb(61, 146, 224, 0.7),
+      box-shadow:
+        inset 0 0.5rem 8rem rgb(61, 146, 224, 0.7),
         inset 0 0.5rem 1rem rgba(7, 4, 22, 0.9),
         inset 0 -0.5rem 1rem rgba(1, 0, 15, 0.8);
     }
@@ -358,13 +339,13 @@ body {
     &--focused {
       border: 0.1rem solid rgba(249, 245, 245, 0.9);
       border-radius: 50%;
-      box-shadow: inset 0 0.5rem 8rem rgb(134, 15, 99, 0.7),
+      box-shadow:
+        inset 0 0.5rem 8rem rgb(134, 15, 99, 0.7),
         inset 0 0.5rem 1rem rgba(212, 64, 190, 0.9),
         inset 0 -0.5rem 1rem rgba(170, 31, 109, 0.8);
     }
   }
 }
-
 
 //popup----------------------------------------------------------------------------------------------
 .popup {
@@ -414,24 +395,24 @@ body {
     background-color: $c-violet;
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
+    box-shadow:
+      inset 0 0.5rem 8rem rgba(87, 8, 70, 0.7),
       inset 0 0.5rem 1rem rgb(104, 32, 138, 0.9),
       inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
     &:hover {
       transform: scale(1.1);
-      box-shadow: inset 0 0.5rem 8rem rgba(194, 22, 157, 0.7),
+      box-shadow:
+        inset 0 0.5rem 8rem rgba(194, 22, 157, 0.7),
         inset 0 0.5rem 1rem rgba(78, 14, 107, 0.9),
         inset 0 -0.5rem 1rem rgba(87, 19, 59, 0.8);
     }
   }
 }
 
-
 .target {
   opacity: 0;
   visibility: hidden;
 }
-
 
 @media screen and (max-width: 1150px) {
   .gallows {
@@ -445,7 +426,6 @@ body {
       font-size: 5rem;
     }
   }
-
 
   .man {
     top: 7.6rem;
@@ -478,7 +458,6 @@ body {
     }
   }
 }
-
 
 @media screen and (max-width: 920px) {
   .body {
@@ -530,7 +509,6 @@ body {
     }
   }
 
-
   .gallows {
     &__part {
       flex-direction: row;
@@ -552,13 +530,11 @@ body {
     }
   }
 
-
   .quiz {
     &__part {
       padding: 1rem 0.5rem;
     }
   }
-
 
   .keyboard {
     &__btn {
@@ -568,7 +544,6 @@ body {
     }
   }
 }
-
 
 @media screen and (max-width: 700px) {
   .body {
@@ -600,12 +575,10 @@ body {
     }
   }
 
-
   .man {
     top: 4.1rem;
     left: 10.5rem;
   }
-
 
   .quiz {
     &__part {
@@ -628,7 +601,6 @@ body {
     }
   }
 
-  
   .keyboard {
     &__btn {
       min-width: 2.2rem;
