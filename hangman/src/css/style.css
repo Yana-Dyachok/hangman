@@ -469,10 +469,13 @@ body {
   }
   .quiz__question {
     padding: 0.5rem 0rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .quiz__display {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  .quiz__title {
+    padding-right: 0.1rem;
   }
   .quiz__letter {
     font-size: 1.6rem;
