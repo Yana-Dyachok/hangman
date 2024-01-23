@@ -7,3 +7,4 @@
 + JavaScript
 + ESLint
 ###  [Click](https://yana-dyachok.github.io/hangman/hangman/index.html) to see the deployment of my project 
+![hangman](https://github.com/Yana-Dyachok/hangman/assets/97878430/cff8e4f0-bf8d-4e21-8201-f2162792cdc8)
